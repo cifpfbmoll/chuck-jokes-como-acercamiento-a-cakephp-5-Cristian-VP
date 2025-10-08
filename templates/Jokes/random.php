@@ -16,7 +16,9 @@
  * @var \App\View\AppView $this Instancia de la vista de la aplicación
  * @var string $jokeText Texto del chiste obtenido de la API externa
  * @var \App\Model\Entity\Joke $joke Entidad Joke preparada para el formulario
+ * @var \App\Model\Entity\Joke $favorites Entidad Joke preparada para el formulario
  */
+
 ?>
 
 <!-- Contenedor principal para la sección de chistes aleatorios -->
@@ -53,9 +55,47 @@
         Al hacer clic, enviará los datos al controlador para guardar en BD
     -->
     <?= $this->Form->button('Guardar en la base de datos') ?>
-    
+
+    <?= $this->Form->button('Ver Favoritos', [
+            'type' => 'button',
+            'id' => 'toggleFavorites',
+            'class' => 'button-favoritos'
+    ]) ?>
+
+
+
     <!-- Cierra el formulario correctamente -->
     <?= $this->Form->end() ?>
 </div>
+
+<div class="favorites" id="favoritesContainer" style="display: none;">
+    <h2>Chistes guardados</h2>
+    <ul>
+        <?php foreach ($favorites as $fav): ?>
+            <li>
+                <strong><?= h($fav->setup) ?></strong>
+                <?php if (!empty($fav->punchline)): ?>
+                    <em><?= h($fav->punchline) ?></em>
+                <?php endif; ?>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+</div>
+
+<?= $this->Html->scriptBlock('
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("toggleFavorites").addEventListener("click", function() {
+            const container = document.getElementById("favoritesContainer");
+            if (container.style.display === "none") {
+                container.style.display = "block";
+                this.textContent = "Ocultar Favoritos";
+            } else {
+                container.style.display = "none";
+                this.style.backgroundColor = "#d33c43";
+                this.textContent = "Ver Favoritos";
+            }
+        });
+    });
+', ['block' => true]) ?>
 
 

@@ -46,6 +46,8 @@ use Cake\Validation\Validator;
  */
 class JokesTable extends Table
 {
+    private \Cake\ORM\Association $jokes;
+
     /**
      * Método de inicialización de la tabla.
      *
@@ -79,7 +81,11 @@ class JokesTable extends Table
 
         // Agrega el comportamiento Timestamp para manejo automático de fechas
         // Esto actualiza automáticamente los campos 'created' y 'modified'
-        $this->addBehavior('Timestamp');
+        $this->addBehavior('Timestamp');//Consulta los chistes guardados
+    }
+    public function getSavedJokes(): array
+    {
+        return $this->find('all')->toArray();
     }
 
     /**

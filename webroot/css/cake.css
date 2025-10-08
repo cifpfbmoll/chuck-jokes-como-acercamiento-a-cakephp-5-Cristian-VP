@@ -37,6 +37,44 @@
     border-color: var(--color-cakephp-red);
 }
 
+.button-favoritos {
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    cursor: pointer;
+}
+
+
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.favorites {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 4px;
+}
+
+.favorites ul {
+    list-style: none;
+    padding: 0;
+}
+
+.favorites li {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
