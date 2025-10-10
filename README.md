@@ -72,9 +72,9 @@ Con todo instalado y configurado, es momento de poner en marcha la aplicación:
 - templates/Jokes/index.php: Aquí se muestra la lista de chistes y el botón para visualizarlos.
 - config/routes.php: Define la ruta para acceder a la acción del controlador (por ejemplo, /jokes).
 
-![Verificación](./screenshoots/chiste%20cerrado.png)  
+![Boton](./screenshoots/chiste_cerrado.png)  
 
-![Verificación](./screenshoots/chistes%20abiertos.png)  
+![Boton](./screenshoots/chistes_abiertos.png)  
 
 
 
