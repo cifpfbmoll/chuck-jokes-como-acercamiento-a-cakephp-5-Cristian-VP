@@ -750,3 +750,32 @@ Cake\Http\Server->run() /home/thian/PhpstormProjects/chuck-jokes-como-acercamien
 Request URL: /jokes/random
 Referer URL: http://127.0.0.1:8765/jokes/random
 Client IP: 127.0.0.1
+2025-10-10 14:24:10 error: [Cake\Controller\Exception\MissingActionException] Action `JokesController::index()` could not be found, or is not accessible. in /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/Controller.php on line 487
+Exception Attributes: array (
+  'controller' => 'JokesController',
+  'action' => 'index',
+)
+Stack Trace:
+- CORE/src/Controller/ControllerFactory.php:161
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:117
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:70
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /jokes/
+Client IP: 127.0.0.1
