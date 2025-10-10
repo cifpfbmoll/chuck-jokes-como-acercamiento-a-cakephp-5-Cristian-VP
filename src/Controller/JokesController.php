@@ -80,11 +80,15 @@ class JokesController extends AppController
         // Obtiene la tabla Jokes para operaciones de base de datos
         $jokesTable = $this->fetchTable('Jokes');
         // Crea una nueva entidad vacía para el formulario
-        $joke = $jokesTable->newEmptyEntity();
+        $joke = $this->Jokes->newEmptyEntity();
         // Pre-llena el campo setup con el chiste obtenido de la API
         $joke->setup = $jokeText;
         // Inicializa el punchline como vacío (puede ser editado por el usuario)
         $joke->punchline = '';
+
+        $favorites =  $this->Jokes->find()
+            ->order(['created' => 'DESC'])
+            ->toArray();
 
         // Procesa el formulario si se envió por POST
         if ($this->request->is('post')) {
@@ -112,8 +116,16 @@ class JokesController extends AppController
             $this->Flash->error('No se pudo guardar el chiste.');
         }
 
+        //$favorites =  $jokesTable->find('all')->toArray();
         // Pasa las variables a la vista para su renderizado
-        $this->set(compact('jokeText', 'joke'));
+        $this->set(compact('jokeText', 'joke', 'favorites'));
+    }
+
+    function favorites()
+    {
+        $jokesTable = $this->fetchTable('Jokes');
+        $favorites =  $jokesTable->find('all')->toArray();
+        $this->set(compact('favorites'));
     }
 }
 

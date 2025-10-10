@@ -102,3 +102,680 @@ Stack Trace:
 
 Request URL: /jockes
 Client IP: 127.0.0.1
+2025-10-08 12:33:02 error: [Error] Typed property App\Model\Table\JokesTable::$jokes must not be accessed before initialization in /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/src/Model/Table/JokesTable.php on line 87
+Stack Trace:
+- CORE/src/ORM/Table.php:330
+- CORE/src/ORM/Locator/TableLocator.php:318
+- CORE/src/ORM/Locator/TableLocator.php:271
+- CORE/src/Datasource/Locator/AbstractLocator.php:68
+- CORE/src/ORM/Locator/TableLocator.php:211
+- CORE/src/ORM/Locator/LocatorAwareTrait.php:96
+- APP/Controller/JokesController.php:81
+- CORE/src/Controller/Controller.php:505
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:162
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:117
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:70
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /jokes/random
+Referer URL: http://127.0.0.1:8765/jokes/random
+Client IP: 127.0.0.1
+2025-10-08 13:30:42 error: [Cake\ORM\Exception\MissingTableClassException] Table class for alias `jokes` could not be found. in /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php on line 249
+Exception Attributes: array (
+  0 => 'for alias `jokes`',
+)
+Stack Trace:
+- CORE/src/Datasource/Locator/AbstractLocator.php:68
+- CORE/src/ORM/Locator/TableLocator.php:211
+- CORE/src/ORM/Locator/LocatorAwareTrait.php:96
+- APP/Controller/JokesController.php:126
+- CORE/src/Controller/Controller.php:505
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:117
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:70
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /jokes/favorites
+Referer URL: http://127.0.0.1:8765/jokes/random
+Client IP: 127.0.0.1
+2025-10-08 13:31:07 error: [Cake\ORM\Exception\MissingTableClassException] Table class for alias `jokes` could not be found. in /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php on line 249
+Exception Attributes: array (
+  0 => 'for alias `jokes`',
+)
+Stack Trace:
+- CORE/src/Datasource/Locator/AbstractLocator.php:68
+- CORE/src/ORM/Locator/TableLocator.php:211
+- CORE/src/ORM/Locator/LocatorAwareTrait.php:96
+- APP/Controller/JokesController.php:126
+- CORE/src/Controller/Controller.php:505
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:117
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:70
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /jokes/favorites
+Referer URL: http://127.0.0.1:8765/jokes/random
+Client IP: 127.0.0.1
+2025-10-08 14:52:14 warning: compact(): Undefined variable $favorites in /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/src/Controller/JokesController.php on line 117
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+/home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/src/Controller/JokesController.php /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/src/Controller/JokesController.php, line 117
+App\Controller\JokesController->random() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/Controller.php, line 505
+Cake\Controller\Controller->invokeAction() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 169
+Cake\Http\Middleware\CsrfProtectionMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 117
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 70
+Cake\Routing\Middleware\AssetMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/webroot/index.php, line 37
+[main]
+
+Request URL: /jokes/random
+Referer URL: http://127.0.0.1:8765/jokes/random
+Client IP: 127.0.0.1
+2025-10-08 14:52:14 warning: Undefined variable $favorites in /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/templates/Jokes/random.php on line 74
+Trace:
+Cake\Error\ErrorTrap->handleError() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/templates/Jokes/random.php, line 74
+/home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php, line 1187
+Cake\View\View->_evaluate() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php, line 1144
+Cake\View\View->_render() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php, line 785
+Cake\View\View->render() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/Controller.php, line 712
+Cake\Controller\Controller->render() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/Controller.php, line 516
+Cake\Controller\Controller->invokeAction() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 169
+Cake\Http\Middleware\CsrfProtectionMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 117
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 70
+Cake\Routing\Middleware\AssetMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/webroot/index.php, line 37
+[main]
+
+Request URL: /jokes/random
+Referer URL: http://127.0.0.1:8765/jokes/random
+Client IP: 127.0.0.1
+2025-10-08 14:52:14 warning: foreach() argument must be of type array|object, null given in /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/templates/Jokes/random.php on line 74
+Trace:
+Cake\Error\ErrorTrap->handleError() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/templates/Jokes/random.php, line 74
+/home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php, line 1187
+Cake\View\View->_evaluate() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php, line 1144
+Cake\View\View->_render() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php, line 785
+Cake\View\View->render() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/Controller.php, line 712
+Cake\Controller\Controller->render() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/Controller.php, line 516
+Cake\Controller\Controller->invokeAction() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 169
+Cake\Http\Middleware\CsrfProtectionMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 117
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 70
+Cake\Routing\Middleware\AssetMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/webroot/index.php, line 37
+[main]
+
+Request URL: /jokes/random
+Referer URL: http://127.0.0.1:8765/jokes/random
+Client IP: 127.0.0.1
+2025-10-08 14:52:14 warning: Unable to emit headers. Headers sent in file=/home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Error/Renderer/HtmlErrorRenderer.php line=37 in /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php on line 65
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+/home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 65
+Cake\Http\ResponseEmitter->emit() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Server.php, line 148
+Cake\Http\Server->emit() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/webroot/index.php, line 37
+[main]
+
+Request URL: /jokes/random
+Referer URL: http://127.0.0.1:8765/jokes/random
+Client IP: 127.0.0.1
+2025-10-08 14:52:14 warning: Cannot modify header information - headers already sent by (output started at /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Error/Renderer/HtmlErrorRenderer.php:37) in /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php on line 159
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+/home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 159
+Cake\Http\ResponseEmitter->emitStatusLine() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 68
+Cake\Http\ResponseEmitter->emit() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Server.php, line 148
+Cake\Http\Server->emit() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/webroot/index.php, line 37
+[main]
+
+Request URL: /jokes/random
+Referer URL: http://127.0.0.1:8765/jokes/random
+Client IP: 127.0.0.1
+2025-10-08 14:52:14 warning: Cannot modify header information - headers already sent by (output started at /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Error/Renderer/HtmlErrorRenderer.php:37) in /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php on line 192
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+/home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 192
+Cake\Http\ResponseEmitter->emitHeaders() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 69
+Cake\Http\ResponseEmitter->emit() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Server.php, line 148
+Cake\Http\Server->emit() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/webroot/index.php, line 37
+[main]
+
+Request URL: /jokes/random
+Referer URL: http://127.0.0.1:8765/jokes/random
+Client IP: 127.0.0.1
+2025-10-08 14:52:14 warning: Cannot modify header information - headers already sent by (output started at /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Error/Renderer/HtmlErrorRenderer.php:37) in /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php on line 192
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+/home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 192
+Cake\Http\ResponseEmitter->emitHeaders() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 69
+Cake\Http\ResponseEmitter->emit() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Server.php, line 148
+Cake\Http\Server->emit() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/webroot/index.php, line 37
+[main]
+
+Request URL: /jokes/random
+Referer URL: http://127.0.0.1:8765/jokes/random
+Client IP: 127.0.0.1
+2025-10-08 14:52:19 warning: compact(): Undefined variable $favorites in /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/src/Controller/JokesController.php on line 117
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+/home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/src/Controller/JokesController.php /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/src/Controller/JokesController.php, line 117
+App\Controller\JokesController->random() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/Controller.php, line 505
+Cake\Controller\Controller->invokeAction() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 169
+Cake\Http\Middleware\CsrfProtectionMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 117
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 70
+Cake\Routing\Middleware\AssetMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/webroot/index.php, line 37
+[main]
+
+Request URL: /jokes/random
+Referer URL: http://127.0.0.1:8765/jokes/random
+Client IP: 127.0.0.1
+2025-10-08 14:52:19 warning: Undefined variable $favorites in /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/templates/Jokes/random.php on line 74
+Trace:
+Cake\Error\ErrorTrap->handleError() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/templates/Jokes/random.php, line 74
+/home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php, line 1187
+Cake\View\View->_evaluate() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php, line 1144
+Cake\View\View->_render() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php, line 785
+Cake\View\View->render() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/Controller.php, line 712
+Cake\Controller\Controller->render() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/Controller.php, line 516
+Cake\Controller\Controller->invokeAction() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 169
+Cake\Http\Middleware\CsrfProtectionMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 117
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 70
+Cake\Routing\Middleware\AssetMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/webroot/index.php, line 37
+[main]
+
+Request URL: /jokes/random
+Referer URL: http://127.0.0.1:8765/jokes/random
+Client IP: 127.0.0.1
+2025-10-08 14:52:19 warning: foreach() argument must be of type array|object, null given in /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/templates/Jokes/random.php on line 74
+Trace:
+Cake\Error\ErrorTrap->handleError() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/templates/Jokes/random.php, line 74
+/home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php, line 1187
+Cake\View\View->_evaluate() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php, line 1144
+Cake\View\View->_render() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php, line 785
+Cake\View\View->render() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/Controller.php, line 712
+Cake\Controller\Controller->render() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/Controller.php, line 516
+Cake\Controller\Controller->invokeAction() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 169
+Cake\Http\Middleware\CsrfProtectionMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 117
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 70
+Cake\Routing\Middleware\AssetMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/webroot/index.php, line 37
+[main]
+
+Request URL: /jokes/random
+Referer URL: http://127.0.0.1:8765/jokes/random
+Client IP: 127.0.0.1
+2025-10-08 14:52:19 warning: Unable to emit headers. Headers sent in file=/home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Error/Renderer/HtmlErrorRenderer.php line=37 in /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php on line 65
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+/home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 65
+Cake\Http\ResponseEmitter->emit() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Server.php, line 148
+Cake\Http\Server->emit() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/webroot/index.php, line 37
+[main]
+
+Request URL: /jokes/random
+Referer URL: http://127.0.0.1:8765/jokes/random
+Client IP: 127.0.0.1
+2025-10-08 14:52:19 warning: Cannot modify header information - headers already sent by (output started at /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Error/Renderer/HtmlErrorRenderer.php:37) in /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php on line 159
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+/home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 159
+Cake\Http\ResponseEmitter->emitStatusLine() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 68
+Cake\Http\ResponseEmitter->emit() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Server.php, line 148
+Cake\Http\Server->emit() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/webroot/index.php, line 37
+[main]
+
+Request URL: /jokes/random
+Referer URL: http://127.0.0.1:8765/jokes/random
+Client IP: 127.0.0.1
+2025-10-08 14:52:19 warning: Cannot modify header information - headers already sent by (output started at /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Error/Renderer/HtmlErrorRenderer.php:37) in /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php on line 192
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+/home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 192
+Cake\Http\ResponseEmitter->emitHeaders() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 69
+Cake\Http\ResponseEmitter->emit() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Server.php, line 148
+Cake\Http\Server->emit() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/webroot/index.php, line 37
+[main]
+
+Request URL: /jokes/random
+Referer URL: http://127.0.0.1:8765/jokes/random
+Client IP: 127.0.0.1
+2025-10-08 14:52:19 warning: Cannot modify header information - headers already sent by (output started at /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Error/Renderer/HtmlErrorRenderer.php:37) in /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php on line 192
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+/home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 192
+Cake\Http\ResponseEmitter->emitHeaders() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 69
+Cake\Http\ResponseEmitter->emit() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Server.php, line 148
+Cake\Http\Server->emit() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/webroot/index.php, line 37
+[main]
+
+Request URL: /jokes/random
+Referer URL: http://127.0.0.1:8765/jokes/random
+Client IP: 127.0.0.1
+2025-10-08 14:52:22 warning: compact(): Undefined variable $favorites in /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/src/Controller/JokesController.php on line 117
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+/home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/src/Controller/JokesController.php /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/src/Controller/JokesController.php, line 117
+App\Controller\JokesController->random() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/Controller.php, line 505
+Cake\Controller\Controller->invokeAction() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 169
+Cake\Http\Middleware\CsrfProtectionMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 117
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 70
+Cake\Routing\Middleware\AssetMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/webroot/index.php, line 37
+[main]
+
+Request URL: /jokes/random
+Referer URL: http://127.0.0.1:8765/jokes/random
+Client IP: 127.0.0.1
+2025-10-08 14:52:22 warning: Undefined variable $favorites in /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/templates/Jokes/random.php on line 74
+Trace:
+Cake\Error\ErrorTrap->handleError() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/templates/Jokes/random.php, line 74
+/home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php, line 1187
+Cake\View\View->_evaluate() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php, line 1144
+Cake\View\View->_render() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php, line 785
+Cake\View\View->render() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/Controller.php, line 712
+Cake\Controller\Controller->render() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/Controller.php, line 516
+Cake\Controller\Controller->invokeAction() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 169
+Cake\Http\Middleware\CsrfProtectionMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 117
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 70
+Cake\Routing\Middleware\AssetMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/webroot/index.php, line 37
+[main]
+
+Request URL: /jokes/random
+Referer URL: http://127.0.0.1:8765/jokes/random
+Client IP: 127.0.0.1
+2025-10-08 14:52:22 warning: foreach() argument must be of type array|object, null given in /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/templates/Jokes/random.php on line 74
+Trace:
+Cake\Error\ErrorTrap->handleError() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/templates/Jokes/random.php, line 74
+/home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php, line 1187
+Cake\View\View->_evaluate() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php, line 1144
+Cake\View\View->_render() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php, line 785
+Cake\View\View->render() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/Controller.php, line 712
+Cake\Controller\Controller->render() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/Controller.php, line 516
+Cake\Controller\Controller->invokeAction() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 169
+Cake\Http\Middleware\CsrfProtectionMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 117
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 70
+Cake\Routing\Middleware\AssetMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/webroot/index.php, line 37
+[main]
+
+Request URL: /jokes/random
+Referer URL: http://127.0.0.1:8765/jokes/random
+Client IP: 127.0.0.1
+2025-10-08 14:52:22 warning: Unable to emit headers. Headers sent in file=/home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Error/Renderer/HtmlErrorRenderer.php line=37 in /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php on line 65
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+/home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 65
+Cake\Http\ResponseEmitter->emit() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Server.php, line 148
+Cake\Http\Server->emit() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/webroot/index.php, line 37
+[main]
+
+Request URL: /jokes/random
+Referer URL: http://127.0.0.1:8765/jokes/random
+Client IP: 127.0.0.1
+2025-10-08 14:52:22 warning: Cannot modify header information - headers already sent by (output started at /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Error/Renderer/HtmlErrorRenderer.php:37) in /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php on line 159
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+/home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 159
+Cake\Http\ResponseEmitter->emitStatusLine() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 68
+Cake\Http\ResponseEmitter->emit() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Server.php, line 148
+Cake\Http\Server->emit() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/webroot/index.php, line 37
+[main]
+
+Request URL: /jokes/random
+Referer URL: http://127.0.0.1:8765/jokes/random
+Client IP: 127.0.0.1
+2025-10-08 14:52:22 warning: Cannot modify header information - headers already sent by (output started at /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Error/Renderer/HtmlErrorRenderer.php:37) in /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php on line 192
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+/home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 192
+Cake\Http\ResponseEmitter->emitHeaders() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 69
+Cake\Http\ResponseEmitter->emit() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Server.php, line 148
+Cake\Http\Server->emit() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/webroot/index.php, line 37
+[main]
+
+Request URL: /jokes/random
+Referer URL: http://127.0.0.1:8765/jokes/random
+Client IP: 127.0.0.1
+2025-10-08 14:52:22 warning: Cannot modify header information - headers already sent by (output started at /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Error/Renderer/HtmlErrorRenderer.php:37) in /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php on line 192
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+/home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 192
+Cake\Http\ResponseEmitter->emitHeaders() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 69
+Cake\Http\ResponseEmitter->emit() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Server.php, line 148
+Cake\Http\Server->emit() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/webroot/index.php, line 37
+[main]
+
+Request URL: /jokes/random
+Referer URL: http://127.0.0.1:8765/jokes/random
+Client IP: 127.0.0.1
+2025-10-08 14:58:35 warning: Undefined variable $favorites in /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/templates/Jokes/random.php on line 74
+Trace:
+Cake\Error\ErrorTrap->handleError() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/templates/Jokes/random.php, line 74
+/home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php, line 1187
+Cake\View\View->_evaluate() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php, line 1144
+Cake\View\View->_render() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php, line 785
+Cake\View\View->render() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/Controller.php, line 712
+Cake\Controller\Controller->render() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/Controller.php, line 516
+Cake\Controller\Controller->invokeAction() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 169
+Cake\Http\Middleware\CsrfProtectionMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 117
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 70
+Cake\Routing\Middleware\AssetMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/webroot/index.php, line 37
+[main]
+
+Request URL: /jokes/random
+Client IP: 127.0.0.1
+2025-10-08 14:58:35 warning: foreach() argument must be of type array|object, null given in /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/templates/Jokes/random.php on line 74
+Trace:
+Cake\Error\ErrorTrap->handleError() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/templates/Jokes/random.php, line 74
+/home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php, line 1187
+Cake\View\View->_evaluate() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php, line 1144
+Cake\View\View->_render() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php, line 785
+Cake\View\View->render() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/Controller.php, line 712
+Cake\Controller\Controller->render() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/Controller.php, line 516
+Cake\Controller\Controller->invokeAction() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 169
+Cake\Http\Middleware\CsrfProtectionMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 117
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 70
+Cake\Routing\Middleware\AssetMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/webroot/index.php, line 37
+[main]
+
+Request URL: /jokes/random
+Client IP: 127.0.0.1
+2025-10-08 14:58:39 warning: Undefined variable $favorites in /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/templates/Jokes/random.php on line 74
+Trace:
+Cake\Error\ErrorTrap->handleError() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/templates/Jokes/random.php, line 74
+/home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php, line 1187
+Cake\View\View->_evaluate() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php, line 1144
+Cake\View\View->_render() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php, line 785
+Cake\View\View->render() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/Controller.php, line 712
+Cake\Controller\Controller->render() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/Controller.php, line 516
+Cake\Controller\Controller->invokeAction() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 169
+Cake\Http\Middleware\CsrfProtectionMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 117
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 70
+Cake\Routing\Middleware\AssetMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/webroot/index.php, line 37
+[main]
+
+Request URL: /jokes/random
+Referer URL: http://127.0.0.1:8765/jokes/random
+Client IP: 127.0.0.1
+2025-10-08 14:58:39 warning: foreach() argument must be of type array|object, null given in /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/templates/Jokes/random.php on line 74
+Trace:
+Cake\Error\ErrorTrap->handleError() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/templates/Jokes/random.php, line 74
+/home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php, line 1187
+Cake\View\View->_evaluate() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php, line 1144
+Cake\View\View->_render() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/View/View.php, line 785
+Cake\View\View->render() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/Controller.php, line 712
+Cake\Controller\Controller->render() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/Controller.php, line 516
+Cake\Controller\Controller->invokeAction() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 169
+Cake\Http\Middleware\CsrfProtectionMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 117
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 70
+Cake\Routing\Middleware\AssetMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/webroot/index.php, line 37
+[main]
+
+Request URL: /jokes/random
+Referer URL: http://127.0.0.1:8765/jokes/random
+Client IP: 127.0.0.1
+2025-10-10 14:24:10 error: [Cake\Controller\Exception\MissingActionException] Action `JokesController::index()` could not be found, or is not accessible. in /home/thian/PhpstormProjects/chuck-jokes-como-acercamiento-a-cakephp-5-Cristian-VP/vendor/cakephp/cakephp/src/Controller/Controller.php on line 487
+Exception Attributes: array (
+  'controller' => 'JokesController',
+  'action' => 'index',
+)
+Stack Trace:
+- CORE/src/Controller/ControllerFactory.php:161
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:117
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:70
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /jokes/
+Client IP: 127.0.0.1

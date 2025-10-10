@@ -65,3 +65,16 @@ Con todo instalado y configurado, es momento de poner en marcha la aplicación:
 ### 4. Verificación
 
 ![Verificación](./screenshoots/save_joke.png)
+
+### 5. Boton "Ver chistes":
+
+- src/Controller/JokesController.php: Se añadio la acción que obtiene los chistes de la base de datos, prepara los datos para la vista.
+- templates/Jokes/index.php: Aquí se muestra la lista de chistes y el botón para visualizarlos.
+- config/routes.php: Define la ruta para acceder a la acción del controlador (por ejemplo, /jokes).
+
+![Verificación](./screenshoots/chiste%20cerrado.png)  
+
+![Verificación](./screenshoots/chistes%20abiertos.png)  
+
+
+
